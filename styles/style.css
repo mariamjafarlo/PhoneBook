@@ -18,18 +18,21 @@
 }
 
 .menu {
-    margin: 1em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15em;
+    background: #1b1b1b;
 }
-  
-.hamburger-menu span {
-    display: flex;
-    height: 3px;
-    margin: 2px;
-    width: 20px;
-    background: #fff;
-    border-radius: 4px;
+ .nav__item {
+     list-style-type: none;
 }
 
+.nav__link {
+    padding: .5em 1em;
+    color: #fff;
+    text-decoration: none;
+}
 .container{
    display: flex;
    flex-direction: column;

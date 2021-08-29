@@ -26,7 +26,9 @@
     background: #1b1b1b;
     overflow: auto;
 }
-
+.menu-icons{
+    float: left;
+}
 .nav-title {
     background: #3922ce ;
     padding: 1em;
@@ -34,7 +36,7 @@
 }
  .nav__item {
      list-style-type: none;
-     margin: .9em;
+     margin: 1em;
 }
 
 .nav__link {

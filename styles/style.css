@@ -22,10 +22,19 @@
     top: 0;
     right: 0;
     width: 15em;
+    height: 100vh;
     background: #1b1b1b;
+    overflow: auto;
+}
+
+.nav-title {
+    background: #3922ce ;
+    padding: 1em;
+    text-align: center;
 }
  .nav__item {
      list-style-type: none;
+     margin: .9em;
 }
 
 .nav__link {

@@ -5,51 +5,60 @@
 }
 
 body {
-    transition:  transform .2s;
-}
-
-body .show-menu {
-    transform: translate3d(15em,0,0);  
+    transition: transform .2s ease-in;
     overflow: hidden;
 }
-.header{
+
+body.show-menu {
+    transform: translate3d(-15em,0,0);
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     background-color: #654fef;
     color: #fff;
 }
 
-.header h1 {
-    margin: 1em;
-    font-size: 1em;
-    color: #fff;
-}
+    .header h1 {
+        margin: 1em;
+        font-size: 1em;
+        color: #fff;
+    }
 
-.menu {
-    position: fixed;
-    top: 0;
-    right: -15;
-    width: 15em;
-    height: 100vh;
-    background: #1b1b1b;
-    overflow: auto;
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: -15em;
+  width: 15em;
+  height: 100vh;
+  overflow: auto;
+  background: #1b1b1b;
 }
-.menu-icons{
+.menu-icons {
     float: left;
 }
+
 .nav-title {
-    background: #3922ce ;
+    background: #3922ce;
     padding: 1em;
     text-align: center;
 }
- .nav__item {
-     list-style-type: none;
-     margin: 1em;
+
+.nav__item {
+    list-style-type: none;
+    margin: 1em;
 }
 
 .nav-toggle {
     padding: 1em;
     color: #fff;
+    transition: transform .3s;
+}
+
+.nav-toggle.is-active {
+    transform: rotate(90deg);
 }
 
 .nav__link {
@@ -57,11 +66,12 @@ body .show-menu {
     color: #fff;
     text-decoration: none;
 }
-.container{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .start-box {
@@ -69,7 +79,7 @@ body .show-menu {
 }
 
 .text-group {
-   font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .start-box input {
@@ -87,30 +97,31 @@ body .show-menu {
     border: solid #654fef;
 }
 
-table , th , td{
-    border: 2px solid  #d0cce7;
- }
+table, th, td {
+    border: 2px solid #d0cce7;
+}
 
- .table-container {
-     margin-top: 2em;
- }
- 
- table{
+.table-container {
+    margin-top: 2em;
+}
+
+table {
     border-collapse: collapse;
     font-family: sans-serif;
     text-align: center;
- }
- 
- th{
-    background-color: #654fef;
-    color:white;
-    font-size: 0.8em;
- }
- th , td{
-    padding: 30px;
- }
+}
 
- th {
+th {
+    background-color: #654fef;
+    color: white;
+    font-size: 0.8em;
+}
+
+th, td {
+    padding: 30px;
+}
+
+th {
     text-align: right;
 }
 

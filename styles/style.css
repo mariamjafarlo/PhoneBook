@@ -3,7 +3,6 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-  
 
 .header{
     display: flex;
@@ -32,11 +31,10 @@
 }
 
 .container{
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 .start-box {
@@ -65,6 +63,10 @@
 table , th , td{
     border: 2px solid  #d0cce7;
  }
+
+ .table-container {
+     margin-top: 2em;
+ }
  
  table{
     border-collapse: collapse;
@@ -78,9 +80,15 @@ table , th , td{
     font-size: 0.8em;
  }
  th , td{
-    padding: 20px;
+    padding: 30px;
  }
 
  th {
     text-align: right;
+}
+
+
+.material-icons {
+    margin: .5em;
+    color: #2c0fe4;
 }

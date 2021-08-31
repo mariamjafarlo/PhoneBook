@@ -1,80 +1,88 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-    <head>
-      <title>Web Introduction</title>
-      <meta charset="utf-8" name="description" content="this is an example of a metadescription"/>
-      <link rel="stylesheet" type="text/css" href="styles/style.css"/>
-      <link rel=”stylesheet” href=”https://fonts.googleapis.com/icon?family=Material+Icons”>
-    </head>
-    <header class="header">
-      <nav class="menu">
-        <div class="hamburger-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-         </div>
-         <a>Contact Group</a>
-      </nav>
-      <h1>مدیر سیستم</h1>
-    </header>
-    <body>
-      <div class="container">
+<head>
+    <title>PhoneBook</title>
+    <meta charset="utf-8" name="description" content="this is an example of a metadescription" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<header class="header">
+    <a class="nav-toggle fa fa-bars"></a>
+    <div class="nav" >
+        <ul>
+            <h4 class="nav-title">مدیریت مخاطبین</h4>
+            <li class="nav__item"><a class="nav__link" href="contact-group.html">مدیریت مخاطبین</a></li>
+            <li class="nav__item"><a class="nav__link" href="">تنظیمات سیستم</a></li>
+            <li class="nav__item"><a class="nav__link" href="">مدیریت کاربران و نقش ها</a></li>
+            <li class="nav__item"><a class="nav__link" href=""> دفترچه تلفن هوشمند<i class="menu-icons fa fa-plus"></i></a></li>
+            <li class="nav__item"><a class="nav__link" href="">جمع آوری شماره های مخاطبین</a></li>
+            <li class="nav__item"><a class="nav__link" href="">ارسال پیام خوش آمدگویی</a></li>
+            <li class="nav__item"><a class="nav__link" href="">نظرسنجی</a></li>
+            <li class="nav__item"><a class="nav__link" href="">سیاست ها و محدودیت ها<i class="menu-icons fa fa-plus"></i></a></li>
+            <li class="nav__item"><a class="nav__link" href="">حضور و غیاب کارکنان<i class="menu-icons fa fa-plus"></i></a></li>
+            <li class="nav__item"><a class="nav__link" href="">حساب کاربری</a></li>
+        </ul>
+    </div>
+    <h1>مدیر سیستم</h1>
+</header>
+<body>
+    <div class="container">
         <div class="start-box">
-          <span class="text-group">نام گروه:</span>
-          <input type="text" id="input-name" placeholder="نام گروه را وارد کنید" />
-          <button class="save">ذخیره</button>
+            <span class="text-group">نام گروه:</span>
+            <input type="text" id="input-name" placeholder="نام گروه را وارد کنید" />
+            <button class="save">ذخیره</button>
         </div>
-      </div>
-      <div class="table-container">
-        <table>
-          <tr>
-             <th>
-                 شناسه
-             </th>
-             <th>
-                نام گروه
-             </th>
-             <th>
-                عملیات
-             </th>
-          </tr>
-          <tr>
-             <td>
-                1
-             </td>
-             <td>
-                
-             </td>
-             <td>
-              <i class='fas fa-user-edit'></i>
-              <i class='fas fa-apple-alt'></i>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>
+                        شناسه
+                    </th>
+                    <th>
+                        نام گروه
+                    </th>
+                    <th>
+                        عملیات
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td></td>
+                    <td>
+                        <span class="material-icons fa fa-pencil"></span>
+                        <span class="material-icons fa fa-trash"></span>
 
-            </td>
-          </tr>
-          <tr>
-             <td>
-                2
-             </td>
-             <td>
-                
-             </td>
-             <td>
-               
-             </td>
-          </tr>
-          <tr>
-             <td>
-                3
-             </td>
-             <td>
-                
-             </td>
-             <td>
-              
-             </td>
-          </tr>
-       </table>
-      </div>   
-      <img src="imagw/MASTER_GROPH_7-2_79.jpg" width="100%" height="520" />
-    </body>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td></td>
+                    <td>
+                        <span class="material-icons fa fa-pencil"></span>
+                        <span class="material-icons fa fa-trash"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        3
+                    </td>
+                    <td></td>
+                    <td>
+                        <span class="material-icons fa fa-pencil"></span>
+                        <span class="material-icons fa fa-trash"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <img src="image/MASTER_GROPH_7-2_79.jpg" width="100%" height="520" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script/main.js"></script>
+
+</body>
 </html>

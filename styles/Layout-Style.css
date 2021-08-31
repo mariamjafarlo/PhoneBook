@@ -6,11 +6,12 @@
 
 body {
     transition: transform .2s ease-in;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body.show-menu {
-    transform: translate3d(15,0,0);
+    transform: translate3d(-15em,0,0);
+
 }
 
 .header {

@@ -6,11 +6,11 @@
 
 body {
     transition: transform .2s ease-in;
-    /* overflow: hidden; */
+    
 }
 
 body.show-menu {
-    transform: translate3d(-15em,0,0);
+    transform: translate3d(0,0,0);
 
 }
 
@@ -28,11 +28,14 @@ body.show-menu {
     }
 
 
-
+.nav.show-menu {
+    display: block;
+    transition: all .2s ease;
+}
 .nav {
+  display: none;
   position: fixed;
   top: 0;
-  right: -15em;
   width: 15em;
   height: 100vh;
   overflow: auto;
@@ -58,6 +61,7 @@ body.show-menu {
     padding: 1em;
     color: #fff;
     transition: transform .3s;
+    z-index: 1;
 }
 
 
@@ -67,6 +71,10 @@ body.show-menu {
 
 .nav__link {
     padding: .5em 1em;
-    color: #fff;
+    color: #ccc;
     text-decoration: none;
+}
+
+a.nav__link:hover {
+    color: #fff;
 }

@@ -28,7 +28,7 @@ h2 {
 }
 
 table, td, th {
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
     }
     th {
         background: #654fef;

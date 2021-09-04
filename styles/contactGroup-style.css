@@ -44,12 +44,18 @@ table, td, th {
     
     table {
     border-collapse: collapse;
-    width: 90%;
+    visibility: hidden;
     font-family: sans-serif;
     text-align: center;
     background: #fff;
     }
     
+    .active{
+       visibility: visible;
+       width: 90%;
+       transition: all .5s ease-in;
+    }
+
     th {
     height: 70px;
     }

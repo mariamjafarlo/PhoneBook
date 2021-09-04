@@ -31,6 +31,7 @@ btn.addEventListener("click", (e) => {
 
     table.appendChild(tr);
     n++;
+    inputName.value = ''
   } else {
     alert("نام گروه را وارد کنید");
   }

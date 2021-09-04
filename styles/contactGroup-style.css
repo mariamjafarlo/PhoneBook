@@ -53,7 +53,7 @@ table, td, th {
     .active{
        visibility: visible;
        width: 90%;
-       transition: all .5s ease-in;
+       transition: visibility .3 ease;
     }
 
     th {

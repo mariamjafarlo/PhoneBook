@@ -1,21 +1,25 @@
 body{
-    background: #fff;
+    
 }
 
 h2 {
     margin: .5em 0em;
     padding: .4em 1em;
-    color: #0052d4;
-    /* background: linear-gradient(to right, #0052d4, #65c7f7, #9cecfb); */
+    color: #000;
 }
 
 
 .start-box input {
-    margin-right: 25em;
+    margin-right: 2em;
     padding: 1em;
-    width: 25%;
+    width: 30%;
     border: 1px solid #ccc;
     border-radius: 3px;
+   
+}
+
+input#input-name.error {
+    border: 2px solid #e74c3c;
 }
 
 .save {
@@ -25,21 +29,26 @@ h2 {
     color: #fff;
     font-weight: bolder;
     border: solid #654fef;
+    
 }
 
-table, td, th {
-    border: 1px solid #ccc;
+table {
+    border-top: 3px solid #ccc;
+}
+
+table ,th ,tr {
+    border-bottom: 1px solid #ccc;
     }
     th {
-        background: #654fef;
-        color: #fff;
+        font-size: 1.2em;
+        color: rgba(22, 21, 21, 0.952);
     }
 
     .table-container {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 7em;
+        margin-top: 1em;
     }
     
     table {
@@ -50,9 +59,24 @@ table, td, th {
     background: #fff;
     }
     
+    .error-message{
+        display: none;
+        font-size: .9em;
+        color: #e74c3c;
+        text-align: right;
+        padding: .5em 6em;
+       
+    }
+
+    .visible {
+        display: block;
+        
+    }
+    
+
     .active{
        visibility: visible;
-       width: 90%;
+       width: 95%;
        transition: visibility .3 ease;
     }
 

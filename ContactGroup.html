@@ -26,16 +26,18 @@
     </header>
     <h2>دفترچه تلفن</h2>
     <div class="container">
-      <div class="start-box">
-        <input type="text" id="input-name" placeholder="نام گروه را وارد کنید"/>
+      <form class="start-box">
+        <input type="text" id="input-name"  placeholder="نام گروه را وارد کنید"/>
         <button type="submit" class="save">ذخیره</button>
-      </div>
+      </form>
+      <div class="error-message"></div>
       <div class="table-container">
         <table id="table" >
           <tr>
             <th>شناسه</th>
             <th>نام گروه</th>
-            <th>عملیات</th>
+            <th>حذف</th>
+            <th>ویرایش</th>
           </tr>
         </table>
       </div>

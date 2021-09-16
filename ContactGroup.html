@@ -19,7 +19,6 @@
                 <li class="nav__item"><a class="nav__link" href="ContactGroup.html">مدیریت مخاطبین</a></li>
                 <li class="nav__item"><a class="nav__link" href="">آیتم شماره 2</a></li>
                 <li class="nav__item"><a class="nav__link" href="">آیتم شماره 3</a></li>
-                
             </ul>
         </div>
         <h1>مدیر سیستم</h1>
@@ -27,11 +26,17 @@
     <h2>دفترچه تلفن</h2>
     <div class="container">
       <form class="start-box">
-        <input type="text" id="input-name"  placeholder="نام گروه را وارد کنید"/>
-        <button type="submit" class="save">ذخیره</button>
+        <input type="text" id="input-name"  placeholder="نام گروه را وارد کنید" />
+        <button type="submit" class="save" onsubmit="checkValidation()">ذخیره</button>
       </form>
       <div class="error-message"></div>
+      <div id="overlay"></div>
       <div class="table-container">
+        <div class="modal" id="modal-contact">
+          <p class="modal-text"></p>
+          <button class="modal-button remove-button" id="yesButtonModal">بله</button>
+          <button class="modal-button cancel-button" id="noButtonModal">انصراف</button>
+        </div>
         <table id="table" >
           <tr>
             <th>شناسه</th>

@@ -1,6 +1,3 @@
-body{
-    
-}
 
 h2 {
     margin: .5em 0em;
@@ -18,22 +15,36 @@ h2 {
    
 }
 
-input#input-name.error {
-    border: 2px solid #e74c3c;
-}
 
-.save {
+
+.save ,.saveNameButtonEdit {
     padding: .8em;
     border-radius: 4px;
     background-color: #654fef;
     color: #fff;
     font-weight: bolder;
     border: solid #654fef;
+    cursor: pointer;
+}
+
+.saveNameButtonEdit {
+    padding: .3em;
+    margin: .3em;
     
 }
 
+
+.inputEdit{
+    color: #000;
+    padding: .7em;
+    border: 1px solid #000;
+    font-size: .9em ;
+    text-align: center;
+}
+
+
 table {
-    border-top: 3px solid #ccc;
+    border: 2px solid #ccc;
 }
 
 table ,th ,tr {
@@ -56,16 +67,26 @@ table ,th ,tr {
     visibility: hidden;
     font-family: sans-serif;
     text-align: center;
-    background: #fff;
+    background-color: #fff;
     }
-    
+    tbody {
+        background-color: #f3f3f3;
+    }
     .error-message{
         display: none;
-        font-size: .9em;
+        font-size: 1em;
         color: #e74c3c;
         text-align: right;
         padding: .5em 6em;
        
+    }
+
+    input#input-name.error {
+        border: 2px solid #e74c3c;
+    }
+
+    .invalidInput {
+        border: 2px solid #000;
     }
 
     .visible {
@@ -91,13 +112,19 @@ table ,th ,tr {
      .id-number {
          width: 10%;
      }
-
-    
+     .btnDelete {
+         color: #e74c3c;
+         cursor: pointer;
+     }
+     .btnEdit {
+         color: #654fef;
+         cursor: pointer;
+     }
      span.material-icons.fa.fa-trash ,  span.material-icons.fa.fa-pencil{
         font-size: 1.5em;
         color: #fff;
         padding: .3em;
-
+        cursor: pointer;
     }
 
     span.material-icons.fa.fa-trash {
@@ -107,3 +134,53 @@ table ,th ,tr {
     span.material-icons.fa.fa-pencil {
         background: #654fef;
     }
+
+.modal {
+   position: fixed;
+   top: 250px;
+   width: 45%;
+   text-align: center;
+   display: none;
+   background-color: #fff;
+   padding: 30px;
+   box-shadow: .5px .5px 7px black;; 
+   border-radius: 7px;
+   
+}  
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:rgba(0, 0, 0, .5);
+}
+.modal.show-modal{
+    display: block;
+}
+
+.modal-button{
+    padding: .5em;
+    width: 15%;
+    border-radius: 2px;
+    background-color: rgb(71, 127, 231);
+    color: #fff;
+    font-weight: bolder;
+    border: solid rgb(71, 127, 231);
+    cursor: pointer;
+    margin: .3em;
+}
+
+
+.cancel-button{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: .9em;
+    color: rgb(71, 127, 231);
+}
+
+p.modal-text {
+    color: #444;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+}

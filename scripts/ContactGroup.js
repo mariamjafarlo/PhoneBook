@@ -30,11 +30,13 @@ let containerBody = document.querySelector('.container')
 
 // ajax.send();
 
-function checkValidation(){
-  
+function checkError(){
+    errorElement.textContent= '';
+    errorElement.classList.remove('visible');
+    inputName.classList.remove('error');
 }
-
-
+ $("#input-name").keyup(checkError);
+  
 saveButton.addEventListener("click", (e) => {
   e.preventDefault();
   
@@ -52,8 +54,7 @@ saveButton.addEventListener("click", (e) => {
     inputName.classList.add('error')
     return
   } 
-  
-  
+
   
   n++;
   groupName.textContent= '';
@@ -101,7 +102,6 @@ tdDelete.appendChild(btnDelete);
   btnEdit.setAttribute('class','btnEdit');
   btnEdit.textContent='edit';
 
-
   btnEdit.addEventListener('click', editGroupName );
   tdEdit.appendChild(btnEdit);
  
@@ -120,7 +120,7 @@ function editGroupName()
   const id = this.getAttribute("data-id");
   const tdName = document.querySelector("td[data-id='"+ id +"']");
  
-
+  
   const input = document.createElement('input');
   input.type='text';
   input.name='edit-name';
